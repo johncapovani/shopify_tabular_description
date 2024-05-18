@@ -49,6 +49,6 @@ Once tested, publish your theme or merge your changes to the live theme.
 
 ## Support
 
-For issues not covered by the documentation, please open an issue on this repository or contact [your contact information].
+For issues not covered by the documentation, please open an issue on this repository or contact me @ johncapovani.
 
 Thank you for using this implementation for enhancing your Shopify store!
