@@ -1,0 +1,46 @@
+<!-- NEW PRODUCT DESCRIPTION START -->
+{%- when 'description' -%}
+  {%- if product.description != blank -%}
+<div class="description" itemprop="description">
+    <div class="col-tabs">
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active">
+                <a href="#description-tab" aria-control="description-tab" role="tab" data-toggle="tab" aria-expanded="true">Description</a>
+            </li>
+            <li role="presentation">
+                <a href="#features-tab" aria-control="features-tab" role="tab" data-toggle="tab" aria-expanded="false">Features</a>
+            </li>
+            <li role="presentation">
+                <a href="#documents-tab" aria-control="documents-tab" role="tab" data-toggle="tab" aria-expanded="false">Documents</a>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane fade active in" id="description-tab">
+                <div class="col-sm-12">
+                 {{ product.description }}
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="features-tab">
+                <div class="col-sm-12">
+                  {% if product.metafields.custom.product_features != blank %}
+                    {{ product.metafields.custom.product_features }}
+                  {% else %}
+                    <p>There isn't additional information on features at this time, but feel free to <a href="/pages/contact-us">contact us</a> with any questions.</p>
+                  {% endif %}
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="documents-tab">
+                <div class="col-sm-12">
+                  {% if product.metafields.custom.product_documentation != blank %}
+                    {{ product.metafields.custom.product_documentation }}
+                  {% else %}
+                    <p>No documents available. Please <a href="/pages/contact-us">contact us</a> for more information.</p>
+                  {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+  {%- endif -%}
+</script>
+<!-- NEW PRODUCT DESCRIPTION END -->

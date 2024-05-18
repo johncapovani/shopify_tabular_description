@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Description Tabs Preview</title>
+  <link rel="stylesheet" href="product_description.css">
+</head>
+
+<body>
+  <div class="description" itemprop="description">
+    <div class="col-tabs">
+      <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active">
+          <a href="#description-tab" aria-controls="description-tab" role="tab" data-toggle="tab"
+            aria-expanded="true">Description</a>
+        </li>
+        <li role="presentation">
+          <a href="#features-tab" aria-controls="features-tab" role="tab" data-toggle="tab"
+            aria-expanded="false">Features</a>
+        </li>
+        <li role="presentation">
+          <a href="#documents-tab" aria-controls="documents-tab" role="tab" data-toggle="tab"
+            aria-expanded="false">Documents</a>
+        </li>
+      </ul>
+      <div class="tab-content">
+        <div role="tabpanel" class="tab-pane fade active in" id="description-tab">
+          <div class="col-sm-12">
+            <p>This is a sample description text for the product. It gives a detailed overview of the product's
+              attributes and benefits.</p>
+          </div>
+        </div>
+        <div role="tabpanel" class="tab-pane fade" id="features-tab">
+          <div class="col-sm-12">
+            <ul>
+              <li>Feature 1: High-quality material</li>
+              <li>Feature 2: Eco-friendly production process</li>
+              <li>Feature 3: Available in multiple colors</li>
+            </ul>
+          </div>
+        </div>
+        <div role="tabpanel" class="tab-pane fade" id="documents-tab">
+          <div class="col-sm-12">
+            <p>Download the product manual and warranty information from the following links:</p>
+            <ul>
+              <li><a href="#">Product Manual</a></li>
+              <li><a href="#">Warranty Information</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="tab_open.js"></script>
+</body>
+
+</html>
